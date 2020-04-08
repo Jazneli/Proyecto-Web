@@ -1,0 +1,111 @@
+/*FUENTES*/
+@font-face{
+    font-family: "noto";
+    src: url(../fonts/NotoSerif-BoldItalic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GENERALES*/
+/*Limpiar margenes y paddings y definir la fuente del cuerpo*/
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; /*Sin subrayados*/
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    background:  #f3f3e3;
+}
+
+img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   will-change: 50%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Eliminar flotados*/
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+/*LOGO*/
+#logo{
+    float: left;
+    width: 540px;
+    height: auto;
+}
+
+#logo a{
+    font-family: "noto", Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    letter-spacing: 2px;
+    color:#153bb8;
+    text-shadow: 0px 0px 0px #fd34f7, 2px 2px 0px  #fd34f7, 3px 3px 0px  #fd34f7;
+    transition: all 800ms;
+    line-height: 110px;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px #fd34f7, -2px -2px 0px  #fd34f7, -3px -3px 0px #fd34f7;
+}
+
+.centrar{
+    text-align: center;
+}
+
+h2{
+    color:darkmagenta;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-family: "noto", Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+}
+
+h1,h3{
+    display: block;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    background:#fcd9df;
+    padding: 15px;
+    box-shadow: 0px 0px 1px #e898af, 0px 3px 7px #e898af, 0px 0px 1px #d47cd4,0px -3px 2px whitesmoke inset;
+ }
+
+ input[type="submit"]{
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    display: block;
+    border-radius: 2px;
+    color: white;
+    background: #e898af;
+    border: 1px solid #d47cd4;
+    cursor: pointer;
+    padding: 5px;
+}
+
+label,
+input[type="email"]{
+    margin: 0px auto;
+    display: block;
+    width: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+}
