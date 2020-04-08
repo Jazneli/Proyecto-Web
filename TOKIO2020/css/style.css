@@ -26,6 +26,7 @@ img {
    margin-left: auto;
    margin-right: auto;
    will-change: 50%;
+   width: 50%;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -38,13 +39,13 @@ img {
 /*LOGO*/
 #logo{
     float: left;
-    width: 540px;
+    width: 100%;
     height: auto;
 }
 
 #logo a{
     font-family: "noto", Arial, Helvetica, sans-serif;
-    font-size: 70px;
+    font-size: 40px;
     letter-spacing: 2px;
     color:#153bb8;
     text-shadow: 0px 0px 0px #fd34f7, 2px 2px 0px  #fd34f7, 3px 3px 0px  #fd34f7;
@@ -80,7 +81,7 @@ h2{
 
 h1,h3{
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
     border-radius: 5px;
     background:#fcd9df;
     padding: 15px;
