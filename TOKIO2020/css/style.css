@@ -135,3 +135,14 @@ input[type="email"]{
     font-family: cursive;
     color:blue;
 }
+
+/* Tabla */
+#table{
+    border-color: blue;
+    border-style: dotted;
+    border-width: 2px;
+}
+
+#table tr,th,td{
+    text-align: center;
+}
