@@ -69,7 +69,7 @@ h2{
     color:darkmagenta;
     font-size: 20px;
     letter-spacing: 1px;
-    margin-top: 25px;
+    margin-top: 20px;
     font-family: "noto", Arial, Helvetica, sans-serif;
 }
 
@@ -81,7 +81,6 @@ h2{
 
 h1,h3{
     display: block;
-    margin-bottom: 10px;
     border-radius: 5px;
     background:#fcd9df;
     padding: 15px;
@@ -109,4 +108,30 @@ input[type="email"]{
     margin-top: 2px;
     margin-bottom: 2px;
     padding: 5px;
+}
+
+/*LISTA*/
+#list ul{
+    list-style: none;
+}
+
+#list ul li::before{
+    font-family:"Font Awesome 5 Free";
+	margin-right:8px;
+}
+
+#list ul li{
+    display: block;
+    padding-left:10px;
+    padding-right: 10px;
+    font-family: cursive;
+    color:blue;
+}
+
+#list ol li{
+    display: block;
+    padding-left:10px;
+    padding-right: 10px;
+    font-family: cursive;
+    color:blue;
 }
