@@ -29,7 +29,7 @@
                 <div class="row center-align">
                     <div class="col s12 m12">
                         <div class="flow-text">
-                            <p class="blue-text text-darken-4"> Tus información no se encuentra registrada. <br>Ingresa los siguientes datos para poder registrar tu cuenta. </p>
+                            <p class="blue-text text-darken-4"> La información no se encuentra registrada. <br>Ingresa los siguientes datos para poder registrar tu cuenta. </p>
                         </div>
                     </div>
                 </div>

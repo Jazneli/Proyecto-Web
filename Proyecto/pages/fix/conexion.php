@@ -4,10 +4,10 @@
     $usuarioBD = 'root';
     $password = 'root';
     $basededatos = 'web';
-    $db = mysqli_connect($servidor, $usuario, $password, $basededatos);
+    $conexion = mysqli_connect($servidor, $usuario, $password, $basededatos);
     
     //Asegurar que acepte todos los caracteres especiales
-    mysqli_query($db, "SET NAMES 'utf8' ");
+    mysqli_query($conexion, "SET NAMES 'utf8' ");
 
     if(mysqli_connect_errno($conexion)){
 		die("Problemas con la conexi&oacute;n al servidor MySQL: ".mysqli_connect_error());

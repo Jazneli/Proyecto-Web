@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="row right-align">
-                    <button class="btn blue accent-4" type="submit" name="action">Entrar</button>
+                    <input type="submit" class="btn blue accent-4" value="Entrar" >
                 </div>
                 <div class="section">
                     <div class="row left-align">
