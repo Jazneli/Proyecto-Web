@@ -1,3 +1,4 @@
+<?php require_once 'pages/fix/conexion.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +21,7 @@
     <header>
         <div class="row center-align">
             <div class="col s12 m12"></div>
-            <!-- <img src="/Proyecto/imgs/header.jpeg" >--> 
-            <img src="imgs/header.jpeg" class="responsive-img center-align">
+                <img src="imgs/header.jpeg" class="responsive-img center-align">
             </div>
         </div>
     </header>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <form id="formIndex" autocomplete="off">
+            <form id="formIndex" autocomplete="off" action="login.php" method="POST">
             <div class="row center-align">
                 <div class="col s12 m6 input-field">
                     <i class="fas fa-user-graduate prefix blue-text text-accent-4"></i>
