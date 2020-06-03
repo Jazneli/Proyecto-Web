@@ -1,9 +1,8 @@
-<?php require_once 'pages/fix/conexion.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Proyecto Web</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
@@ -16,6 +15,7 @@
     <script src="./js/plugins/validetta/validetta.min.js"></script>
     <script src="./js/plugins/validetta/validettaLang-es-ES.js"></script>
     <script src="./js/plugins/confirm/jquery-confirm.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <header>
@@ -34,30 +34,32 @@
                     </div>
                 </div>
             </div>
-            <form id="formIndex" autocomplete="off" action="login.php" method="POST">
+            <form id="formIndex" autocomplete="off">
             <div class="row center-align">
+            <!---Campo boleta-->
                 <div class="col s12 m6 input-field">
                     <i class="fas fa-user-graduate prefix blue-text text-accent-4"></i>
                     <label for="boleta">Número de Boleta</label>
                     <input type="text" id="boleta" name="boleta" maxlength="10" data-validetta="required,number,minLength[10],maxLength[10]">
                 </div>
-
+            <!---Campo contraseña-->
                 <div class="col s12 m6 input-field">
                     <i class="fas fa-lock prefix blue-text text-accent-4"></i>
                     <label for="contrasena">Contrase&ntilde;a</label>
                     <input type="password" id="contrasena" name="contrasena" data-validetta="required,minLength[6]">
                 </div>
-
+            <!---Botón entrar-->
                 <div class="row right-align">
                     <input type="submit" class="btn blue accent-4" value="Entrar" >
                 </div>
-                <div class="section">
+            </div>
+            </form>
+            <!---Bótón activar cuenta-->
+            <div class="section">
                     <div class="row left-align">
                         <a href="./pages/activar/activar.php" class="btn light-blue darken-1">ACTIVAR CUENTA</a> 
                     </div>
                 </div>
-            </div>
-            </form>
         </div>
     </main>
     <footer>

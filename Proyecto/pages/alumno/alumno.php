@@ -1,3 +1,4 @@
+<?php require_once './../fix/conexion.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,8 +31,15 @@
                         <div class="flow-text">
                             <p class="blue-text text-darken-4"> ALUMNO </p>
                         </div>
+                        <?php if (isset($_SESSION['usuario'])): ?>
+                            <div id="usuario-logueado" class="bloque">
+                                <h3 id="Bienvenido">Bienvenido, <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['primerApe'] . ' ' . $_SESSION['usuario']['segundoApe']; ?></h3>
+                             </div>
+                        <?php endif; ?>
                     </div>
                 </div>
+            </div>
+        </div>
     </main>
     <?php
         readfile("./../fix/footer.html");

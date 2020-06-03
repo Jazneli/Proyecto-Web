@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <form id="formIndex" autocomplete="off">
+            <form id="formActivar" autocomplete="off" action="activarCuenta.php" method="POST">
             <div class="row center-align">
                 <div class="col s12 m6 input-field">
                     <i class="fas fa-user-graduate prefix blue-text text-accent-4"></i>
