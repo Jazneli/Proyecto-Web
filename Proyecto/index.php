@@ -6,16 +6,14 @@
     <title>Proyecto Web</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <link href="./js/plugins/validetta/validetta.min.css" rel="stylesheet">
-    <link href="./js/plugins/confirm/jquery-confirm.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./css/general.css" rel="stylesheet">
+   
+    <link href="css/general.css" rel="stylesheet">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./js/plugins/validetta/validetta.min.js"></script>
-    <script src="./js/plugins/validetta/validettaLang-es-ES.js"></script>
-    <script src="./js/plugins/confirm/jquery-confirm.min.js"></script>
-    <script src="./js/index.js"></script>
+   
+    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
@@ -34,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <form id="formIndex" autocomplete="off">
+            <form id="formIndex" autocomplete="off" action="login.php" method="POST">
             <div class="row center-align">
             <!---Campo boleta-->
                 <div class="col s12 m6 input-field">
@@ -54,7 +52,7 @@
                 </div>
             </div>
             </form>
-            <!---Bótón activar cuenta-->
+            <!---Botón activar cuenta-->
             <div class="section">
                     <div class="row left-align">
                         <a href="./pages/activar/activar.php" class="btn light-blue darken-1">ACTIVAR CUENTA</a> 

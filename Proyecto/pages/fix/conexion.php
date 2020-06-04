@@ -3,7 +3,7 @@
     $servidor = 'localhost';
     $usuarioBD = 'root';
     $password = 'root';
-    $basededatos = 'pweb';
+    $basededatos = 'web';
     $conexion = mysqli_connect($servidor, $usuarioBD, $password, $basededatos);
     
     //Asegurar que acepte todos los caracteres especiales
