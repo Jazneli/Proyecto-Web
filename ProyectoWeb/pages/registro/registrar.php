@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <form id="formActivar" autocomplete="off">
+                <form id="formRegistro" autocomplete="off">
                 <div class="col s12 m4 input-field">
                     <label for="boleta">Boleta</label>
                     <input type="text" id="boleta" name="boleta" maxLength="10" data-validetta="required,number,minLength[8],maxLength[10]">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col s12 m4 input-field">
                     <label for="tel">N&uacute;mero Telef&oacute;nico</label>
-                    <input type="text" id="tel" name="tel" data-validetta="required">
+                    <input type="text" id="tel" name="tel" data-validetta="required,number,minLength[10]">
                 </div>
                 <div class="col s12 m4 input-field">
                     <label for="contrasena">Contrase&ntilde;a</label>
@@ -72,11 +72,11 @@
                 </div>
 
                 <div class="row right-align">
-                    <button class="btn blue accent-4" type="submit" name="action">Registrar</button>
+                    <input type="submit" class="btn blue accent-4" value="Registrar">
                 </div>
                 <div class="section">
                     <div class="row left-align">
-                        <a href=".\..\..\index.php" class="btn light-blue darken-1">Cancelar</a>
+                        <a href="./../../index.php" class="btn light-blue darken-1">Cancelar</a>
                     </div>
                 </div>
                 </form>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Activación</title>
+<title>Activar</title>
 <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -29,18 +29,18 @@
                 <div class="row center-align">
                     <div class="col s12 m12">
                         <div class="flow-text">
-                            <p class="blue-text text-darken-4"> Ingresa los siguientes datos para poder finalizar la activación de tu cuenta. </p>
+                            <p class="blue-text text-darken-4"> Completa los datos para finalizar la Activación de tu Cuenta </p>
                         </div>
                     </div>
                 </div>
-                <form id="formActivar" autocomplete="off">
+                <form id="formActivacion" autocomplete="off">
                 <div class="col s12 m6 input-field">
                     <label for="correo">Correo</label>
                     <input type="text" id="correo" name="correo" data-validetta="required,email">
                 </div>
                 <div class="col s12 m6 input-field">
                     <label for="tel">N&uacute;mero Telef&oacute;nico</label>
-                    <input type="text" id="tel" name="tel" data-validetta="required">
+                    <input type="text" id="tel" name="tel" data-validetta="required,number,minLength[10]">
                 </div>
                 <div class="col s12 m6 input-field">
                     <label for="contrasena">Contrase&ntilde;a</label>
@@ -50,12 +50,13 @@
                     <label for="contrasena2">Confirmar contrase&ntilde;a</label>
                     <input type="password" id="contrasena2" name="contrasena2" data-validetta="required,minLength[6],equalTo[contrasena]">
                 </div>
+
                 <div class="row right-align">
-                    <button class="btn blue accent-4" type="submit" name="action">Guardar</button>
+                    <input type="submit" class="btn blue accent-4" value="Guardar">
                 </div>
                 <div class="section">
                     <div class="row left-align">
-                        <a href=".\..\..\index.php" class="btn light-blue darken-1">Cancelar</a>
+                        <a href="./../../index.php" class="btn light-blue darken-1">Cancelar</a>
                     </div>
                 </div>
                 </form>
