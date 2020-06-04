@@ -14,5 +14,6 @@
         echo "ERROR";
 	}else{
         mysqli_query($conexion, "SET NAMES 'utf8'"); //Esta instrucción permite guardar eñes y acentos en la BD ;)
-	}
+       // echo ("OK");
+}
 ?>
