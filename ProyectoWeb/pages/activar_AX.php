@@ -17,7 +17,7 @@
     if($inf == 1){
         $_SESSION["boleta"] = $boleta;
         $respAX["val"] = 1;
-        $respAX["msj"] = "<h5>Continua tu Registro</h5>";
+        $respAX["msj"] = "<h5>Continua la Activación de tu Cuenta</h5>";
     }else{
         $respAX["val"] = 0;
         $respAX["msj"] = "<h5>Datos incorrectos. Favor de Registrar tu cuenta.</h5>";

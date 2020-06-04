@@ -1,18 +1,18 @@
 $(document).ready(function(){
-    $("#formActivar").validetta({
+    $("#formActivacion").validetta({
         bubblePosition: "bottom",
         bubbleGapTop: 10,
         bubbleGapLeft: -5,
         onValid:function(e){
             e.preventDefault();
             $.ajax({
-                url:"./pages/activar_AX.php",
+                url:"./contActivar_AX.php",
                 method:"POST",
-                data:$("#formActivar").serialize(),
+                data:$("#formActivacion").serialize(),
                 cache:false,
                 success:function(respAX){
                     var AX = JSON.parse(respAX);
-                    var titulo = "<h3> Proyecto Web </h3>";
+                    var titulo = "<h2>Proyecto Web</h2>";
                     $.alert({
                         title:titulo,
                         content:AX.msj,
@@ -20,12 +20,10 @@ $(document).ready(function(){
                         theme:"supervan",
                         onDestroy:function(){
                             if(AX.val == 0){
-                                //No se encontro el registro
-                                location.replace("./pages/registro/registrar.php");
+                                location.reload();
                             }
                             if(AX.val == 1){
-                                //Datos correctos
-                                location.replace("./pages/activar/contActivar.php");
+                                location.replace("./pages/alumno/alumno.php");
                             }
                         }
                     });

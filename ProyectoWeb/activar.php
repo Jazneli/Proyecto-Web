@@ -58,9 +58,6 @@
                     <div class="row left-align">
                         <a href=".\..\..\index.php" class="btn light-blue darken-1">Volver</a>
                     </div>
-                    <div class="row right-align">
-                        <a href=".\..\registro\registrar.php" class="btn light-blue darken-1">Registrar</a>
-                    </div>
                 </div>
             </div>
             </form>
