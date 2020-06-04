@@ -34,7 +34,7 @@
                 </div>
                 <div class="col s12 m4 input-field">
                     <label for="curp">CURP</label>
-                    <input type="text" id="curp" name="curp" maxLength="18">
+                    <input type="text" id="curp" name="curp" minLength="18" maxLength="18">
                 </div>
                 <div class="col s12 m4 input-field">
                     <label for="nombre">Nombre</label>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="col s12 m4 input-field">
                     <label for="tel">N&uacute;mero Telef&oacute;nico</label>
-                    <input type="text" id="tel" name="tel">
+                    <input type="text" id="tel" name="tel" minLength="10">
                 </div>
                 <div class="col s12 m4 input-field">
                     <label for="contrasena">Contrase&ntilde;a</label>
