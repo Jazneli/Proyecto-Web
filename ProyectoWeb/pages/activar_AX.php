@@ -20,7 +20,7 @@
         $respAX["msj"] = "<h5>Continua la Activación de tu Cuenta</h5>";
     }else{
         $respAX["val"] = 0;
-        $respAX["msj"] = "<h5>Datos incorrectos. Favor de Registrar tu cuenta.</h5>";
+        $respAX["msj"] = "<h5>Datos no encontrados en la BD. Favor de Registrar tu cuenta.</h5>";
     }
 
     //Convierte a formato JSON
