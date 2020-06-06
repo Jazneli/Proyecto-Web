@@ -1,6 +1,6 @@
 <?php
     //Inicia una sesión
-    SESSION_START();
+    session_start();
 
     include("./fix/conexion.php");
     include("./fix/getPosts.php");
@@ -15,7 +15,7 @@
     $respAX = [];
     if($inf == 1){
         $respAX["val"] = 1;
-        $respAX["msj"] = "<h5>Cuenta Activada</h5>";
+        $respAX["msj"] = "<h5>Cuenta Activada, Bienvenido</h5>";
     }else{
         $respAX["val"] = 0;
         $respAX["msj"] = "<h5>Ocurrio un error, por favor vuele a intentarlo</h5>";

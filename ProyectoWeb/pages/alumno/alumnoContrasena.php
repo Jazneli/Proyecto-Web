@@ -8,7 +8,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Alumno</title>
+<title>Contraseña</title>
 <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -22,6 +22,7 @@
 <script src="./../../js/plugins/validetta/validetta.min.js"></script>
 <script src="./../../js/plugins/validetta/validettaLang-es-ES.js"></script>
 <script src="./../../js/plugins/confirm/jquery-confirm.min.js"></script>
+
 </head>
 <body>
     <?php
@@ -39,17 +40,36 @@
                         <li class="tab col s3"><a href="alumnoComprobante.php" class="blue-text text-darken-4"><i class="fas fa-folder"></i> Comprobante</a></li>
                     </ul>
                 </div>
-                <div id="info" class="col s12">
-                    <h5> Lista de materias </h5>
+                <div id="contrasena" class="col s12">
+                    <p>&nbsp;</p>
+                    <div class="row">
+                        <form id="formCambiarContrasena">
+                        <div class="col s12 m4 input-field">
+                            <label for="contrasenaAct">Contrase&ntilde;a actual</label>
+                            <input type="password" id="contrasenaAct" name="contrasenaAct" data-validetta="required,minLength[6]">
+                        </div>
+                        <div class="col s12 m4 input-field">
+                            <label for="contrasenaNva">Contrase&ntilde;a nueva</label>
+                            <input type="password" id="contrasenaNva" name="contrasenaNva" data-validetta="required,minLength[6],equalTo[contrasenaNva2]">
+                        </div>
+                        <div class="col s12 m4 input-field">
+                            <label for="contrasenaNva2">Confirmar contrase&ntilde;a</label>
+                            <input type="password" id="contrasenaNva2" name="contrasenaNva2" data-validetta="required,minLength[6],equalTo[contrasenaNva]">
+                        </div>
+                         <div class="row right-align">
+                            <input type="submit" class="btn blue accent-4" value="Cambiar Contraseña" >
+                        </div>
+                        </form>
+                    </div>
                 </div>
             </div>   
         </div>
         <div class="section">
-            <div class="row right-align">
-                <ul>
-                    <li><a href="./../fix/cerrarSesion.php?nombreSesion=boleta" class="btn-floating red"><i class="fas fa-power-off"></i></a></li>
-                </ul>
-            </div>
+                    <div class="row right-align">
+                        <ul>
+                            <li><a href="./../fix/cerrarSesion.php?nombreSesion=boleta" class="btn-floating red"><i class="fas fa-power-off"></i></a></li>
+                        </ul>
+                    </div>
         </div>
     </main>
     <?php

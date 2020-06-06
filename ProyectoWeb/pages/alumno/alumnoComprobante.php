@@ -1,3 +1,4 @@
+                
 <?php
     session_start();
     if(isset($_SESSION["boleta"])){
@@ -8,7 +9,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Alumno</title>
+<title>Comprobante</title>
 <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -39,8 +40,16 @@
                         <li class="tab col s3"><a href="alumnoComprobante.php" class="blue-text text-darken-4"><i class="fas fa-folder"></i> Comprobante</a></li>
                     </ul>
                 </div>
-                <div id="info" class="col s12">
-                    <h5> Lista de materias </h5>
+
+                <div id="comprobante" class="col s12">
+                    <div class="row center-align">
+                        <div class="col s12 m12">
+                            <h1>
+                                <a href="./alumnoPDF.php"><i class="fab fa-adobe fa-2x blue-text accent-4"></i></a>
+                            </h1>
+                            <h5>PDF</h5>
+                        </div>
+                    </div>
                 </div>
             </div>   
         </div>
