@@ -61,7 +61,7 @@
                         </div>
                         <div class="col s12 m4 input-field">
                             <label for="curp">CURP</label>
-                            <input type="text" id="curp" name="curp" value="<?php echo $infInfBoleta[1]; ?>" data-validetta="required">
+                            <input type="text" id="curp" name="curp" value="<?php echo $infInfBoleta[1]; ?>" data-validetta="required,minLength[18],maxLength[18]">
                         </div>
                         <div class="col s12 m4 input-field">
                             <label for="correo">Correo</label>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="col s12 m4 input-field">
                             <label for="tel">Telefóno</label>
-                            <input type="text" id="tel" name="tel" value="<?php echo $infInfBoleta[7]; ?>" data-validetta="required">
+                            <input type="text" id="tel" name="tel" value="<?php echo $infInfBoleta[7]; ?>" data-validetta="required,number,minLength[10]">
                         </div>
                         <div class="row right-align">
                             <input type="submit" class="btn blue accent-4" value="Guardar Cambios" >
