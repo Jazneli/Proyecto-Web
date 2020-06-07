@@ -15,7 +15,7 @@ $(document).ready(function(){
                 cache:false,
                 success:function(respAX){
                     var AX = JSON.parse(respAX);
-                    var titulo = "<h2>CRUD - TW - 20202</h2>";
+                    var titulo = "<h2>Proyecto Web</h2>";
                     $.alert({
                         title:titulo,
                         content:AX.msj,
@@ -42,8 +42,8 @@ $(document).ready(function(){
                 data:$("#formCambiarContrasena").serialize(),
                 cache:false,
                 success:function(respAX){
-                    var AX = JSON.parse(respAX);
-                    var titulo = "<h2>CRUD - TW - 20202</h2>";
+                     var AX = JSON.parse(respAX);
+                    var titulo = "<h2>Proyecto Web</h2>";
                     $.alert({
                         title:titulo,
                         content:AX.msj,

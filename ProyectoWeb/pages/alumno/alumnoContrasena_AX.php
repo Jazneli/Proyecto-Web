@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include("./../fix/configBD.php");
+    include("./../fix/conexion.php");
     include("./../fix/getPosts.php");
 
     $boleta = $_SESSION["boleta"];
@@ -17,7 +17,7 @@
         $infUpdContrasena = mysqli_affected_rows($conexion);
         if($infUpdContrasena == 1){
             $respAX["val"] = 1;
-            $respAX["msj"] = "<h5>Su contrase&ntilde;a se actializ&oacute; correctamente. Gracias :)</h5>";
+            $respAX["msj"] = "<h5>Su contrase&ntilde;a se actualiz&oacute; correctamente.</h5>";
         }else{
             $respAX["val"] = 0;
             $respAX["msj"] = "<h5>No se pudo realizar la actualizaci&oacute;n de su contrasen&ntilde;a. Favor de intentarlo nuevamente.</h5>";

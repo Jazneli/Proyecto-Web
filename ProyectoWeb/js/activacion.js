@@ -23,7 +23,7 @@ $(document).ready(function(){
                                 location.reload();
                             }
                             if(AX.val == 1){
-                                location.replace("./pages/alumno/alumno.php");
+                                location.replace("./../../index.php");
                             }
                         }
                     });

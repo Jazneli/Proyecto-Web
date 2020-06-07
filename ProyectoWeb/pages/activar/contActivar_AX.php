@@ -2,8 +2,8 @@
     //Inicia una sesión
     session_start();
 
-    include("./fix/conexion.php");
-    include("./fix/getPosts.php");
+    include("./../fix/conexion.php");
+    include("./../fix/getPosts.php");
 
     //Respuesta en formato JSON
     $boleta = $_SESSION['boleta'];
@@ -15,7 +15,7 @@
     $respAX = [];
     if($inf == 1){
         $respAX["val"] = 1;
-        $respAX["msj"] = "<h5>Cuenta Activada, Bienvenido</h5>";
+        $respAX["msj"] = "<h5>Cuenta Activada. Ya puedes iniciar sesión</h5>";
     }else{
         $respAX["val"] = 0;
         $respAX["msj"] = "<h5>Ocurrio un error, por favor vuele a intentarlo</h5>";
