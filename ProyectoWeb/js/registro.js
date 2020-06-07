@@ -19,7 +19,7 @@ $(document).ready(function(){
                         icon:"fas fa-cogs fa-2x",
                         theme:"supervan",
                         onDestroy:function(){
-                            if(AX.cod == 0){
+                            if(AX.cod == 0 || AX.cod == 2){
                                 location.reload();
                             }
                             if(AX.cod == 1){

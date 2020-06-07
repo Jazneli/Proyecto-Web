@@ -19,11 +19,11 @@ $(document).ready(function(){
                         icon:"fas fa-cogs fa-2x",
                         theme:"supervan",
                         onDestroy:function(){
-                            if(AX.val == 0){
+                            if(AX.val == 0 || AX.val == 2){
                                 location.reload();
                             }
                             if(AX.val == 1){
-                                location.replace("./../../index.php");
+                                location.replace("./pages/alumno/alumno.php");
                             }
                         }
                     });
