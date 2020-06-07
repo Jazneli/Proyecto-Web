@@ -10,7 +10,7 @@
 
     //Respuesta en formato JSON
     $respAX = [];
-
+    $contrasena = md5($contrasena);
     //Consulta
     $sql = "SELECT * FROM alumno WHERE boleta = '$boleta' AND contrasena = '$contrasena'";
     $res = mysqli_query($conexion,$sql);
