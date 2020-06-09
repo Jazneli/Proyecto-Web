@@ -23,9 +23,13 @@ $(document).ready(function(){
                                 //No se encontro el registro
                                 location.replace("./pages/registro/registrar.php");
                             }
-                            if(AX.val == 1){
-                                //Datos correctos
-                                location.replace("./pages/activar/contActivar.php");
+                            else{
+                                if(AX.val == 1){
+                                    //Datos correctos
+                                    location.replace("./pages/activar/contActivar.php");
+                                }else{
+                                    location.replace("./../../index.php");
+                                }
                             }
                         }
                     });

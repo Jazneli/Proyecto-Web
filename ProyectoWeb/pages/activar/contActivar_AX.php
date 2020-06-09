@@ -9,7 +9,7 @@
     $activar = 1; 
     $boleta = $_SESSION['boleta'];
     $contrasena = md5($contrasena);
-    $sqlUpdBoleta = "UPDATE alumno SET correo='$correo', telefono='$tel', contrasena='$contrasena' WHERE boleta='$boleta'";
+    $sqlUpdBoleta = "UPDATE alumno SET correo='$correo', telefono='$tel', contrasena='$contrasena', activo='$activar' WHERE boleta='$boleta'";
     $respUpdBoleta = mysqli_query($conexion,$sqlUpdBoleta);
     $inf = mysqli_affected_rows($conexion);
 
