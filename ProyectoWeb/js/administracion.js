@@ -1,8 +1,10 @@
 $(document).ready(function(){
+    $(".dropdown-trigger").dropdown();
+    $(".sidenav").sidenav();
     $('.fixed-action-btn').floatingActionButton();
 
     var boleta;
-    var titulo = "<h2 >Proyecto Web</h2>";
+    var titulo = "<h2>Administracion</h2>";
 
     //Nos ayudamos del evento on() de jQuery  [https://www.w3schools.com/jquery/event_on.asp] ya que las clases '***Almn' se generan de forma dinámica y no están disponibles en primera instancia para el DOM de JS
     $("main").on("click",".verAlmn",function(){
