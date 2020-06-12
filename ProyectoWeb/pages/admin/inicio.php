@@ -26,33 +26,31 @@
 <script src="./../../js/administracion.js"></script>
 </head>
 <body>
-    <nav class="nav-wrapper blue darken-4">
-        <div class="container">
-            <a href="#" class="left sidenav-trigger" data-target="mobile-links"><i class="material-icons">menu</i></a>
-            <a class="brand-logo center-on-med-and-down">Administración</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="" class="href">Reporte General<i class="material-icons right">insert_chart</i></a></li>
-                <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Buscar alumno<i class="material-icons right">arrow_drop_down</i></a></li>
-                <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="#">Por boleta</a></li>
-                    <li><a href="#">Por CURP</a></li>
-                </ul>
-                <li><a href="" class="#">Cerrar Sesion<i class="material-icons right">power_settings_new</i></a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <ul class="sidenav" id="mobile-links">
-        <li><a href="./administracionReporte.php">Reporte General<i class="material-icons right">insert_chart</i></a></li>
-        <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Buscar alumno<i class="material-icons right">arrow_drop_down</i></a></li>
-        <ul id="dropdown2" class="dropdown-content">
-            <li><a href="#">Por boleta</a></li>
-            <li><a href="#">Por CURP</a></li>
-        </ul>
-        <li><a href="./../fix/cerrarSesion.php?nombreSesion=admin" class="href">Cerrar Sesion<i class="material-icons right">power_settings_new</i></a></li>
-    </ul>
-
     <header>
+        <nav class="nav-wrapper blue darken-4">
+            <div class="container">
+                <a href="#" class="left sidenav-trigger" data-target="mobile-links"><i class="material-icons">menu</i></a>
+                <a class="brand-logo center-on-med-and-down">Administración</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="" class="href">Reporte General<i class="material-icons right">insert_chart</i></a></li>
+                    <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Buscar alumno<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="#">Por boleta</a></li>
+                        <li><a href="#">Por CURP</a></li>
+                    </ul>
+                    <li><a href="./../fix/cerrarSesion.php?nombreSesion=admin" class="#">Cerrar Sesion<i class="material-icons right">power_settings_new</i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="./administracionReporte.php">Reporte General<i class="material-icons right">insert_chart</i></a></li>
+            <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Buscar alumno<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id="dropdown2" class="dropdown-content">
+                <li><a href="#">Por boleta</a></li>
+                <li><a href="#">Por CURP</a></li>
+            </ul>
+            <li><a href="./../fix/cerrarSesion.php?nombreSesion=admin" class="href">Cerrar Sesion<i class="material-icons right">power_settings_new</i></a></li>
+        </ul>
         <div class="fixed-action-btn click-to-toggle">
             <a class="btn-floating btn-large blue darken-4">
                 <i class="fas fa-ellipsis-h"></i>

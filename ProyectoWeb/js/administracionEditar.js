@@ -30,7 +30,7 @@ $(document).ready(function(){
                 cache:false,
                 success:function(respAX){
                     var AX = JSON.parse(respAX);
-                    var titulo = "<h2>CRUD - TW - 20202</h2>";
+                    var titulo = "<h2>Administracion - Modificacion</h2>";
                     $.alert({
                         title:titulo,
                         content:AX.msj,
@@ -41,7 +41,7 @@ $(document).ready(function(){
                                 location.reload();
                             }
                             if(AX.cod == 1){
-                                window.location.href = "./administracion.php";
+                                window.location.href = "./inicio.php";
                             }
                         }
                     });
