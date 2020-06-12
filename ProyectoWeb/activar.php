@@ -56,7 +56,7 @@
                 </div>
                 <div class="section">
                     <div class="row left-align">
-                        <a href=".\..\..\index.php" class="btn light-blue darken-1">Volver</a>
+                        <a href=".\index.php" class="btn light-blue darken-1">Volver</a>
                     </div>
                 </div>
             </div>

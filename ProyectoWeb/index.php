@@ -24,7 +24,7 @@
             </div>
         </div>
     </header>
-    <main class="valign-wrapper">
+    <main class="main">
         <div class="container">
             <div class="row center-align">
                 <div class="col s12 m12">
@@ -62,12 +62,15 @@
                 </div>
         </div>
     </main>
-    <footer>
-    <div class="row center-align">
-        <div class="col s12 m12"></div>
-             <img src="imgs/footer3.jpeg" class="responsive-img center-align">
+    <footer class="page-footer grey darken-3">
+        <div class="row center-align">
+            <div class="col s12 m12"></div>
+                <img src="imgs/footer3.jpeg" class="responsive-img center-align">
+            </div>
         </div>
-    </div>
-</footer>
+        <div class="row right-align">
+            <a href="pages/admin/index.php" class="fas fa-user-tie fa-2x white-text text-accent-4"></a>
+        </div>
+    </footer>
 </body>
 </html>
