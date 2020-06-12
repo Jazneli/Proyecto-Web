@@ -52,11 +52,14 @@
                     <input type="submit" class="btn blue" style="width:100%;" value="Entrar">
                 </div>
                 </form>
+                <div class="col s12 m4 offset-m4 input-field">
+                    <a href="../../index.php" class="btn blue" style="width:100%;">Volver</a>
+                </div>
             </div>
         </div>
     </main>
     <footer class="page-footer grey darken-3">
-        <div>
+        <div class="row center-align">
             <div class="col s12 m12"></div>
                 <img src="../../imgs/footer3.jpeg" class="responsive-img center-align">
             </div>
