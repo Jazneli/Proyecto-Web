@@ -34,21 +34,50 @@
             <?php echo $infBoleta; ?>
                 <div class="col s12">
                     <ul class="tabs ">
-                        <li class="tab col s3 blue-text text-darken-4"><a href="#info" class=" active blue-text text-darken-4"><i class="fas fa-eye"></i> Info</a></li>
+                        <li class="tab col s3 blue-text text-darken-4"><a href="#info" class=" active blue-text text-darken-4"><i class="fas fa-eye"></i> Unidades de Aprendizaje</a></li>
                         <li class="tab col s3"><a href="#editar" class="blue-text text-darken-4"><i class="fas fa-edit"></i> Editar</a></li>
                         <li class="tab col s3"><a href="#contrasena" class="blue-text text-darken-4"><i class="fas fa-key"></i> Contrase&ntilde;a</a></li>
                         <li class="tab col s3"><a href="#comprobante" class="blue-text text-darken-4"><i class="fas fa-folder"></i> Comprobante</a></li>
                     </ul>
                 </div>
                 <div id="info" class="col s12">
-                    <div class="flow-text">
-                        <p class="blue-text text-darken-4"> Da click en el boton para ir al formulario de seleccion de materias tus Unidades de Aprendizaje </p>
-                    </div>
-                    <form action="alumnoSeleccionMaterias.php">
+                    <br>
+                    <h6 class="red-text text-darken-4 center-align"> Da click en el boton para ir al formulario de seleccion de tus Unidades de Aprendizaje </h6>
+                    <div class="section">
                         <div class="row center-align">
-                                <input type="submit" class="btn blue accent-4" value="Ir a Formulario" >
-                        </div>
-                    </form>
+                        <a href="./alumnoSeleccionar.php" class="btn light-blue darken-1">SELECCIONAR UNIDADES DE APRENDIZAJE</a>
+                    </div>
+                     <div class="flow-text">
+                        <p class="blue-text text-darken-4"> Lista de Unidades de Aprendizaje Seleccionadas. </p>
+                    </div>
+                    <div class="center-align col m12">
+                        <table class="striped blue darken-1 centered responsive-table">
+                            <thead>
+                                <tr>
+                                    <th>Clave</th>
+                                    <th>Unidad de Aprendizaje</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                    include("./../fix/conexion.php");
+                                    $materias = "SELECT m.clave, m.nombre, ma.recurse FROM materia AS m INNER JOIN matalumno AS ma ON m.clave = ma.claveMat WHERE ma.boletaAlum='$boleta'";
+                                    $resMaterias = mysqli_query($conexion, $materias);
+                                    while($ua=mysqli_fetch_assoc($resMaterias)){
+                                        echo "<tr> <td> ".$ua["clave"]." </td> <td> ".$ua["nombre"]."</td> <td> ";
+                                        if($ua['recurse']== 1){
+                                            echo "RECURSE </td> <tr>";
+                                        } else{
+                                            echo "POR CURSAR  </td> <tr>";
+                                        }
+                                    }
+                                ?>
+                            </tbody>
+                        </table>
+                    
+                    </div>
+            </div>
                 </div>
                 <div id="editar" class="col s12">
                     <p>&nbsp;</p>
@@ -124,7 +153,7 @@
             <i class="fas fa-ellipsis-h"></i>
         </a>
         <ul>
-            <li><a href="./../fix/cerrarSesion.php?nombreSesion=boleta" class="btn-floating red darken-4"><i class="fas fa-power-off"></i></a></li>
+            <li><a href="./../fix/cerrarSesion.php?nombreSesion=boleta" class="btn-floating blue darken-4"><i class="fas fa-power-off"></i></a></li>
         </ul>
     </div>
     </main>
