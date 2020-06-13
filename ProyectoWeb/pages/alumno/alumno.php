@@ -41,7 +41,14 @@
                     </ul>
                 </div>
                 <div id="info" class="col s12">
-                    <h5> Lista de materias </h5>
+                    <div class="flow-text">
+                        <p class="blue-text text-darken-4"> Da click en el boton para ir al formulario de seleccion de materias tus Unidades de Aprendizaje </p>
+                    </div>
+                    <form action="alumnoSeleccionMaterias.php">
+                        <div class="row center-align">
+                                <input type="submit" class="btn blue accent-4" value="Ir a Formulario" >
+                        </div>
+                    </form>
                 </div>
                 <div id="editar" class="col s12">
                     <p>&nbsp;</p>
@@ -111,17 +118,25 @@
                 </div>
             </div>   
         </div>
-        <div class="section">
-            <div class="row right-align">
-                <ul>
-                    <li><a href="./../fix/cerrarSesion.php?nombreSesion=boleta" class="btn-floating red"><i class="fas fa-power-off"></i></a></li>
-                </ul>
+
+    <div class="fixed-action-btn click-to-toggle">
+        <a class="btn-floating btn-large blue darken-4">
+            <i class="fas fa-ellipsis-h"></i>
+        </a>
+        <ul>
+            <li><a href="./../fix/cerrarSesion.php?nombreSesion=boleta" class="btn-floating red darken-4"><i class="fas fa-power-off"></i></a></li>
+        </ul>
+    </div>
+    </main>
+    <footer class="page-footer grey darken-3">
+        <div class="row center-align">
+            <div class="col s12 m12"></div>
+                <?php
+                    readfile("./../fix/footer.html");
+                ?>
             </div>
         </div>
-    </main>
-    <?php
-        readfile("./../fix/footer.html");
-    ?>
+    </footer>
 </body>
 </html>
 <?php

@@ -39,14 +39,14 @@
     $resMaterias = mysqli_query($conexion, $materias);
    // $infMaterias = mysqli_fetch_row($resMaterias);
     
-    $txtIntroduccion = "Este reporte contiene la información de las materias que se tiene intención de inscribir el siguiente semestre.";
+    $txtIntroduccion = "Este reporte contiene la información de las unidades de aprendizaje que se tiene intención de inscribir el siguiente semestre.";
 
     //Crear objeto
     $pdf = new PDF();
     $pdf->AddPage();
     $pdf->SetFont('Arial','B',15);
     $pdf->Ln(10);
-    $pdf->Cell(0,7,utf8_decode("LISTA DE MATERIAS SELECCIONADAS"),0,1,"C");
+    $pdf->Cell(0,7,utf8_decode("LISTA DE UNIDADES DE APRENDIZAJE SELECCIONADAS"),0,1,"C");
     $pdf->SetFont('Arial','',12);
     $pdf->Ln(10);
     $pdf->Cell(0,7,"Boleta: $infAlumno[0]",0,1,"C");

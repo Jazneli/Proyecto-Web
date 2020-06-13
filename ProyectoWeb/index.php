@@ -55,7 +55,7 @@
             </form>
             <!---Botón activar cuenta-->
             <div class="section">
-                <div class="row center-align">
+                <div class="row left-align">
                    <!-- <a href="./pages/activar/activar.php" class="btn light-blue darken-1">ACTIVAR CUENTA</a> -->
                    <a href="./activar.php" class="btn light-blue darken-1">ACTIVAR CUENTA</a>
                 </div>
@@ -64,7 +64,7 @@
     </main>
     <footer class="page-footer grey darken-3">
         <div class="row center-align">
-            <div class="col s12 m12"></div>
+            <div class="col s12 m12">
                 <img src="imgs/footer3.jpeg" class="responsive-img center-align">
             </div>
         </div>

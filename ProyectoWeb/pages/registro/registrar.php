@@ -83,8 +83,14 @@
             </div>
         </div>
     </main>
-    <?php
-        readfile("./../fix/footer.html");
-    ?>
+    <footer class="page-footer grey darken-3">
+        <div class="row center-align">
+            <div class="col s12 m12"></div>
+                <?php
+                    readfile("./../fix/footer.html");
+                ?>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
