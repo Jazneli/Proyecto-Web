@@ -39,7 +39,7 @@
                     <input type="text" id="boleta" name="boleta" maxLength="10" data-validetta="required,number,minLength[8],maxLength[10]">
                 </div>
                 <div class="col s12 m4 input-field">
-                    <label for="contrasena">CURP</label>
+                    <label for="curp">CURP</label>
                     <input type="text" id="curp" name="curp" data-validetta="required,minLength[18],maxLength[18]">
                 </div>
                 <div class="col s12 m4 input-field">
@@ -51,7 +51,7 @@
                     <input type="text" id="primerApe" name="primerApe" data-validetta="required">
                 </div>
                 <div class="col s12 m4 input-field">
-                    <label for="seundoApe">Segundo apellido</label>
+                    <label for="segundoApe">Segundo apellido</label>
                     <input type="text" id="segundoApe" name="segundoApe" data-validetta="required">
                 </div>
                 <div class="col s12 m4 input-field">

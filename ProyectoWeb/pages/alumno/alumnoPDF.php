@@ -1,7 +1,7 @@
 <?php
     session_start();
     //Clase de FPDF
-    include("./../../fpdf/fpdf.php");
+    include("./../fix/fpdf182/fpdf.php");
     include("./../fix/conexion.php");
 
     setlocale(LC_ALL, "es_MX");

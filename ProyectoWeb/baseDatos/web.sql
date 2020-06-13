@@ -27,7 +27,9 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `alumno`
 --
-
+DROP DATABASE IF EXISTS web;
+CREATE DATABASE web;
+USE web;
 DROP TABLE IF EXISTS `alumno`;
 CREATE TABLE IF NOT EXISTS `alumno` (
   `boleta` varchar(10) NOT NULL,

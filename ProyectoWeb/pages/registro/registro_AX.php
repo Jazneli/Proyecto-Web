@@ -7,13 +7,13 @@
     $sqlBoleta = "SELECT * FROM alumno WHERE boleta= '$boleta'";
     $resBoleta = mysqli_query($conexion,$sqlBoleta);
     $infBoleta = mysqli_num_rows($resBoleta);
-
+    
     if($infBoleta >= 1){
         $respAX["cod"] = 2;
         $respAX["msj"] = "<h5> Boleta ya registrada </h5>";
     }else{
         $contrasena = md5($contrasena);
-        $activo = 1;
+        $activo = 0;
         $sqlInsBoleta = "INSERT INTO alumno VALUES('$boleta','$curp','$nombre','$primerApe','$segundoApe','$correo','$contrasena','$tel','$activo')";
         $resInsBoleta = mysqli_query($conexion,$sqlInsBoleta);
         $infInsBoleta = mysqli_affected_rows($conexion);
