@@ -35,8 +35,8 @@
                     <li><a href="./admin_report.php" class="">Reporte General<i class="material-icons right">insert_chart</i></a></li>
                     <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Buscar alumno<i class="material-icons right">arrow_drop_down</i></a></li>
                     <ul id="dropdown1" class="dropdown-content">
-                        <li><a href="#">Por boleta</a></li>
-                        <li><a href="#">Por CURP</a></li>
+                        <li><a class="findBoleta" href="#">Por boleta</a></li>
+                        <li><a class="findCurp" href="#">Por CURP</a></li>
                     </ul>
                     <li><a href="./../fix/cerrarSesion.php?nombreSesion=admin" class="#">Cerrar Sesion<i class="material-icons right">power_settings_new</i></a></li>
                 </ul>
@@ -46,8 +46,8 @@
             <li><a href="./administracionReporte.php">Reporte General<i class="material-icons right">insert_chart</i></a></li>
             <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Buscar alumno<i class="material-icons right">arrow_drop_down</i></a></li>
             <ul id="dropdown2" class="dropdown-content">
-                <li><a href="#">Por boleta</a></li>
-                <li><a href="#">Por CURP</a></li>
+                <li><a class="findBoleta" href="#">Por boleta</a></li>
+                <li><a class="findCurp" href="#">Por CURP</a></li>
             </ul>
             <li><a href="./../fix/cerrarSesion.php?nombreSesion=admin" class="href">Cerrar Sesion<i class="material-icons right">power_settings_new</i></a></li>
         </ul>

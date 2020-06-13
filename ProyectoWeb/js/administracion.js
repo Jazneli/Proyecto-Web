@@ -6,6 +6,100 @@ $(document).ready(function(){
     var boleta;
     var titulo = "<h2>Administracion</h2>";
 
+    $("header").on("click",".findBoleta",function(){
+        $.confirm({
+            title:'Buscar por boleta',
+            content:'' +
+            '<form action="" class="formBoleta">' +
+                '<div class="form-group">' +
+                    '<label>Por favor ingrese la boleta</label>' +
+                    '<input type="text" placeholder="Boleta" id="boleta" class="boleta form-control" required />' +
+                '</div>' +
+            '</form>',
+            theme:"modern",
+            icon:"fas fa-search",
+            buttons: {
+                formSubmit: {
+                    text: 'Buscar',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        var boleta = this.$content.find('.boleta').val();
+                        if(boleta.length != 10){
+                            $.alert('Ingresa una boleta valida');
+                            return false;
+                        }
+                        else{
+                            $.alert({
+                                title:titulo,
+                                content: "url:./administracionVer_AX.php?boleta="+boleta,
+                                theme:"supervan",
+                                icon:"fas fa-eye fa-2x"
+                            });
+                        }
+                    }
+                },
+                Cancelar: function () {
+                    //cerrar propmt
+                },
+            },
+            onContentReady: function () {
+                var jc = this;
+                this.$content.find('form').on('submit', function (e) {
+                    // si presiona Enter en vez del boton Buscar
+                    e.preventDefault();
+                    jc.$$formSubmit.trigger('click'); // reference the button and click it
+                });
+            }
+        });
+    });
+
+    $("header").on("click",".findCurp",function(){
+        $.confirm({
+            title:'Buscar por CURP',
+            content:'' +
+            '<form action="" class="formName">' +
+                '<div class="form-group">' +
+                    '<label>Por favor ingrese el CURP</label>' +
+                    '<input type="text" placeholder="CURP" class="curp form-control" data-validetta="required,number,minLength[10],maxLength[10]" />' +
+                '</div>' +
+            '</form>',
+            theme:"modern",
+            icon:"fas fa-search",
+            buttons: {
+                formSubmit: {
+                    text: 'Buscar',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        var curp = this.$content.find('.curp').val();
+                        if(curp.length != 18){
+                            $.alert('Ingresa un CURP valido');
+                            return false;
+                        }
+                        else{
+                            $.alert({
+                                title:titulo,
+                                content: "url:./admin_find_curp.php?curp="+curp,
+                                theme:"supervan",
+                                icon:"fas fa-eye fa-2x"
+                            });
+                        }
+                    }
+                },
+                Cancelar: function () {
+                    //cerrar propmt
+                },
+            },
+            onContentReady: function () {
+                var jc = this;
+                this.$content.find('form').on('submit', function (e) {
+                    // si presiona Enter en vez del boton Buscar
+                    e.preventDefault();
+                    jc.$$formSubmit.trigger('click'); // reference the button and click it
+                });
+            }
+        });
+    });
+
     //Nos ayudamos del evento on() de jQuery  [https://www.w3schools.com/jquery/event_on.asp] ya que las clases '***Almn' se generan de forma dinámica y no están disponibles en primera instancia para el DOM de JS
     $("main").on("click",".verAlmn",function(){
         boleta = $(this).attr("data-ver");
