@@ -19,7 +19,7 @@ $(document).ready(function(){
                     $.alert({
                         title:titulo,
                         content:AX.msj,
-                        icon:"fas fa-cogs fa-2x",
+                        icon:"fas fa-pen fa-2x",
                         theme:"supervan",
                         onDestroy:function(){
                             location.reload();
@@ -47,7 +47,7 @@ $(document).ready(function(){
                     $.alert({
                         title:titulo,
                         content:AX.msj,
-                        icon:"fas fa-cogs fa-2x",
+                        icon:"fas fa-pen fa-2x",
                         theme:"supervan",
                         onDestroy:function(){
                             location.reload();

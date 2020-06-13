@@ -25,9 +25,6 @@
             </div>
         </div>
     </header>
-  <!-- <?php
-         readfile("./../fix/header.html");
-    ?>-->
     <main class="valign-wrapper">
         <div class="container">
             <div class="row center-align">
@@ -63,16 +60,12 @@
             </form>
         </div>
     </main>
-    <footer>
-    <div class="row center-align">
-        <div class="col s12 m12"></div>
-             <img src="imgs/footer3.jpeg" class="responsive-img center-align">
-        </div>
-    </div>
-</footer>
-    <!--
-    <?php
-        readfile("./../fix/footer.html");
-    ?>-->
+    <footer class="page-footer grey darken-3">
+            <div class="row center-align">
+                <div class="col s12 m12">
+                    <img src="imgs/footer3.jpeg" class="responsive-img center-align">
+                </div>
+            </div>
+    </footer>
 </body>
 </html>
