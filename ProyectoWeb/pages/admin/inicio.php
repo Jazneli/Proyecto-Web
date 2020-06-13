@@ -52,12 +52,12 @@
             <li><a href="./../fix/cerrarSesion.php?nombreSesion=admin" class="href">Cerrar Sesion<i class="material-icons right">power_settings_new</i></a></li>
         </ul>
         <div class="fixed-action-btn click-to-toggle">
-            <a class="btn-floating btn-large blue darken-4">
+            <a class="btn-floating btn-large pulse blue darken-4">
                 <i class="fas fa-ellipsis-h"></i>
             </a>
             <ul>
                 <li><a href="./../fix/cerrarSesion.php?nombreSesion=admin" class="btn-floating blue darken-4"><i class="fas fa-power-off"></i></a></li>
-                <li><a href="./administracionReporte.php" class="btn-floating blue darken-4"><i class="fas fa-chart-bar"></i></a></li>
+                <li><a href="./admin_report.php" class="btn-floating blue darken-4"><i class="fas fa-chart-bar"></i></a></li>
             </ul>
         </div>
     </header>
