@@ -28,7 +28,7 @@ $(document).ready(function(){
                                     //Datos correctos
                                     location.replace("./pages/activar/contActivar.php");
                                 }else{
-                                    location.replace("./../../index.php");
+                                    location.replace("./../index.php");
                                 }
                             }
                         }
