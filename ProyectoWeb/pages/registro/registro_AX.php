@@ -22,7 +22,7 @@
             $respAX["msj"] = "<h5> Registro Exitoso </h5>";
         }else{
             $respAX["cod"] = 0;
-            $respAX["msj"] = "<h5> Error al realizar el Registro </h5>";
+            $respAX["msj"] = "<h5> Error al realizar el Registro </h5>" . $conexion -> error;
         }
     }
     echo json_encode($respAX);

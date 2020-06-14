@@ -44,9 +44,11 @@ CREATE TABLE IF NOT EXISTS `alumno` (
   PRIMARY KEY (`boleta`),
   UNIQUE KEY `curp` (`curp`),
   UNIQUE KEY `boleta` (`boleta`),
-  UNIQUE KEY `correo` (`correo`,`contrasena`),
-  UNIQUE KEY `contrasena` (`contrasena`)
+  UNIQUE KEY `correo` (`correo`,`contrasena`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Quite el unique key para la contraseña, porque si es posible que dos personas
+-- sin conocerse eligieran la misma, y les iba a salir un error de registro
 
 --
 -- Volcado de datos para la tabla `alumno`
