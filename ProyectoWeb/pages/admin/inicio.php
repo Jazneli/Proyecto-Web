@@ -8,7 +8,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Proyecto Web - Admin inicio</title>
+<title>Admin Inicio</title>
 <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -61,7 +61,7 @@
             </ul>
         </div>
     </header>
-    <main>
+    <main class="blue darken-3">
         <div class="container">
             <div class="row">
                 <table class="striped blue lighten-4 centered responsive-table">

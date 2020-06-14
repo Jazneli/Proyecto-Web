@@ -8,12 +8,16 @@
         array_push($numClaves,$filas[1]);
     }
 
+    // Ahora solo muestra materias que tienen intenciones
     $filasMaterias = "";
-    $sqlMat = "SELECT * FROM materia ORDER BY clave";
+    $sqlMat = "SELECT m.clave, m.nombre FROM materia m INNER JOIN matalumno ma ON m.clave=ma.claveMat;";
     $resMat = mysqli_query($conexion, $sqlMat);
     while($filas = mysqli_fetch_array($resMat,MYSQLI_BOTH)){
         $filasMaterias .= "<tr>
             <td>$filas[0]</td><td>$filas[1]</td>
+            <td>
+                <a class='btn-floating white pulse'><i class='material-icons purple-text text-darken-3 pdfMat' data-pdf='$filas[0]'>picture_as_pdf</i></a>&nbsp;
+            </td>
         </tr>";
     }
 ?>

@@ -52,7 +52,7 @@
                 <table class="striped blue lighten-4 centered responsive-table">
                     <thead>
                         <tr>
-                            <th>Clave</th><th>Materia</th>
+                            <th>Clave</th><th>Materia</th><th>Reporte</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -1,6 +1,11 @@
 $(document).ready(function(){
     $(".sidenav").sidenav();
 
+    $("main").on("click",".pdfMat",function(){
+        clave = $(this).attr("data-pdf");
+        window.location.href = "./admin_mat_pdf.php?clave="+clave;
+    });
+
     var dataBarsClave = [{
         x:claves,
         y:cantidad,
