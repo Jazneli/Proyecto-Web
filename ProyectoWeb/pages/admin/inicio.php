@@ -61,7 +61,7 @@
             </ul>
         </div>
     </header>
-    <main class="blue darken-3">
+    <main>
         <div class="container">
             <div class="row">
                 <table class="striped blue lighten-4 centered responsive-table">

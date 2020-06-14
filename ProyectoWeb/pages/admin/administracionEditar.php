@@ -42,42 +42,42 @@
             </div>
         </nav>
     </header>
-    <main class="valign-wrapper center-align blue darken-3">
+    <main class="valign-wrapper center-align">
         <div class="container">
             <div class="row">
                 <form id="formEditar" autocomplete="off">
-                    <div class="col s12 m4 input-field">
-                        <label class="white-text" for="boleta">Boleta</label>
+                    <div class="col s12 m6 input-field">
+                        <label class="blue-text text-darken-4" for="boleta">Boleta</label>
                         <input type="text" id="boleta" name="boleta" maxLength="10" value="<?php echo $infAlmn[0];  ?>" readonly data-validetta="required,number,minLength[8],maxLength[10]">
                     </div>
-                    <div class="col s12 m4 input-field">
-                        <label class="white-text" for="curp">CURP</label>
+                    <div class="col s12 m6 input-field">
+                        <label class="blue-text text-darken-4" for="curp">CURP</label>
                         <input type="text" id="curp" name="curp" value="<?php echo $infAlmn[1]; ?>" data-validetta="required,minLength[18],maxLength[18]">
                     </div>
                     <div class="col s12 m4 input-field">
-                        <label class="white-text" for="nombre">Nombre</label>
+                        <label class="blue-text text-darken-4" for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" value="<?php echo $infAlmn[2]; ?>" data-validetta="required">
                     </div>
                     <div class="col s12 m4 input-field">
-                        <label class="white-text" for="primerApe">Primer apellido</label>
+                        <label class="blue-text text-darken-4" for="primerApe">Primer apellido</label>
                         <input type="text" id="primerApe" name="primerApe" value="<?php echo $infAlmn[3]; ?>" data-validetta="required">
                     </div>
                     <div class="col s12 m4 input-field">
-                        <label class="white-text" for="seundoApe">Segundo apellido</label>
+                        <label class="blue-text text-darken-4" for="seundoApe">Segundo apellido</label>
                         <input type="text" id="segundoApe" name="segundoApe" value="<?php echo $infAlmn[4]; ?>" data-validetta="required">
                     </div>
-                    <div class="col s12 m4 input-field">
-                        <label class="white-text" for="correo">Correo</label>
+                    <div class="col s12 m6 input-field">
+                        <label class="blue-text text-darken-4" for="correo">Correo</label>
                         <input type="text" id="correo" name="correo" value="<?php echo $infAlmn[5]; ?>" data-validetta="required,email">
                     </div>
-                    <div class="col s12 m4 input-field">
-                        <label class="white-text" for="telefono">Teléfono</label>
+                    <div class="col s12 m6 input-field">
+                        <label class="blue-text text-darken-4" for="telefono">Teléfono</label>
                         <input type="text" id="telefono" name="telefono" value="<?php echo $infAlmn[7]; ?>" data-validetta="required,minLength[10]">
                     </div>
-                    <div class="col s12 m4 input-field">
+                    <div class="col s12 m6 input-field">
                         <a href="./inicio.php" class="btn orange" style="width:100%;">Cancelar</a>
                     </div>
-                    <div class="col s12 m4 input-field">
+                    <div class="col s12 m6 input-field">
                         <input type="submit" class="btn blue" style="width:100%;" value="Actualizar">
                     </div>
                 </form>

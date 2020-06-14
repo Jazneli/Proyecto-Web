@@ -58,9 +58,9 @@
             $pdf->Cell(25,6,$row['clave'],1,0,'C');
             $pdf->Cell(100,6,utf8_decode($row['nombre']),1,0,'C');
             if($row['recurse'] == 1){
-                $pdf->Cell(40,6,'Recurse',1,1,'C');
+                $pdf->Cell(40,6,'RECURSE',1,1,'C');
             } else{
-                $pdf->Cell(40,6,'Por Cursar',1,1,'C');
+                $pdf->Cell(40,6,'POR CURSAR',1,1,'C');
             }
         }
 
